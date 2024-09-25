@@ -1,32 +1,212 @@
 [
   {
-    "title": "Work close.",
-    "description": "Raise action identify. Party control trial author bad recognize where.\nBall gun break. Someone young rich play.",
-    "event_date": "2025-06-11",
-    "organizer": "Simmons-Blake"
+    "_id": "1",
+    "title": "Tech Conference 2024",
+    "description": "A conference exploring the latest in technology and innovation.",
+    "event_date": "2024-11-15",
+    "organizer": "Tech World Inc."
   },
   {
-    "title": "Prove white institution.",
-    "description": "Imagine who where nation exactly hour rule protect. All program even change.",
-    "event_date": "2024-11-20",
-    "organizer": "Nelson-Martin"
+    "_id": "2",
+    "title": "Health & Wellness Expo",
+    "description": "Join health experts and enthusiasts for a day of wellness activities.",
+    "event_date": "2024-12-01",
+    "organizer": "Wellness Gurus"
   },
   {
-    "title": "Notice be country picture.",
-    "description": "Inside class fact thank. Ball eat management marriage what.",
-    "event_date": "2025-01-02",
-    "organizer": "Jackson, Williams and Dunn"
+    "_id": "3",
+    "title": "Startup Pitch Night",
+    "description": "Entrepreneurs pitch their ideas to investors and potential partners.",
+    "event_date": "2025-01-22",
+    "organizer": "Startup Hub"
   },
   {
-    "title": "Door imagine bag.",
-    "description": "Own each raise catch page improve site say. News summer last summer authority side.",
-    "event_date": "2025-07-17",
-    "organizer": "Cobb, Taylor and Rodriguez"
+    "_id": "4",
+    "title": "Art & Design Workshop",
+    "description": "A hands-on workshop for aspiring artists and designers.",
+    "event_date": "2024-10-18",
+    "organizer": "Creative Minds"
   },
   {
-    "title": "Current upon pay.",
-    "description": "Decision assume food thought. Red threat age major. Indeed exactly oil agent.",
-    "event_date": "2025-04-27",
-    "organizer": "Bird Ltd"
+    "_id": "5",
+    "title": "Business Networking Event",
+    "description": "Expand your professional network with industry leaders.",
+    "event_date": "2024-11-30",
+    "organizer": "Global Entrepreneurs"
+  },
+  {
+    "_id": "6",
+    "title": "Environmental Summit",
+    "description": "A summit discussing environmental issues and sustainable solutions.",
+    "event_date": "2024-12-05",
+    "organizer": "Green Earth Org."
+  },
+  {
+    "_id": "7",
+    "title": "Music Festival 2025",
+    "description": "A weekend full of music from various genres and artists.",
+    "event_date": "2025-03-15",
+    "organizer": "Music Fest Productions"
+  },
+  {
+    "_id": "8",
+    "title": "Coding Bootcamp",
+    "description": "A two-week intensive bootcamp for aspiring software developers.",
+    "event_date": "2024-11-07",
+    "organizer": "Code Academy"
+  },
+  {
+    "_id": "9",
+    "title": "Film Screening & Discussion",
+    "description": "Watch an indie film followed by a panel discussion with the creators.",
+    "event_date": "2024-12-12",
+    "organizer": "Indie Film Collective"
+  },
+  {
+    "_id": "10",
+    "title": "Fitness Challenge",
+    "description": "A community-driven fitness challenge with prizes for top performers.",
+    "event_date": "2025-01-10",
+    "organizer": "FitLife"
+  },
+  {
+    "_id": "11",
+    "title": "Blockchain Symposium",
+    "description": "Experts discuss the future of blockchain technology and its applications.",
+    "event_date": "2024-12-18",
+    "organizer": "Crypto Innovators"
+  },
+  {
+    "_id": "12",
+    "title": "Culinary Arts Masterclass",
+    "description": "Learn from top chefs in this immersive culinary experience.",
+    "event_date": "2025-02-20",
+    "organizer": "Master Chefs Association"
+  },
+  {
+    "_id": "13",
+    "title": "Photography Exhibition",
+    "description": "Showcase of works by local and international photographers.",
+    "event_date": "2024-12-25",
+    "organizer": "PhotoArt Gallery"
+  },
+  {
+    "_id": "14",
+    "title": "Robotics Competition",
+    "description": "Teams compete in building and programming autonomous robots.",
+    "event_date": "2025-03-01",
+    "organizer": "Robotics Club"
+  },
+  {
+    "_id": "15",
+    "title": "Marketing Strategy Workshop",
+    "description": "Learn modern marketing strategies to grow your business.",
+    "event_date": "2025-02-15",
+    "organizer": "Marketing Pros"
+  },
+  {
+    "_id": "16",
+    "title": "AI & Machine Learning Conference",
+    "description": "Industry experts discuss the future of AI and machine learning.",
+    "event_date": "2024-12-10",
+    "organizer": "AI Research Group"
+  },
+  {
+    "_id": "17",
+    "title": "Craft Beer Festival",
+    "description": "Sample craft beers from local and regional breweries.",
+    "event_date": "2025-01-25",
+    "organizer": "Brew Masters Association"
+  },
+  {
+    "_id": "18",
+    "title": "Fashion Show",
+    "description": "Showcasing the latest fashion trends from top designers.",
+    "event_date": "2025-03-10",
+    "organizer": "Fashion Forward"
+  },
+  {
+    "_id": "19",
+    "title": "Non-Profit Fundraising Gala",
+    "description": "An evening of philanthropy to support various non-profit organizations.",
+    "event_date": "2024-11-28",
+    "organizer": "Global Charity Network"
+  },
+  {
+    "_id": "20",
+    "title": "Yoga Retreat",
+    "description": "A relaxing weekend retreat focusing on yoga and mindfulness.",
+    "event_date": "2025-02-05",
+    "organizer": "Zen Wellness"
+  },
+  {
+    "_id": "21",
+    "title": "Space Exploration Seminar",
+    "description": "Learn about the latest advancements in space exploration.",
+    "event_date": "2025-01-15",
+    "organizer": "Space Frontier Organization"
+  },
+  {
+    "_id": "22",
+    "title": "Volunteer Appreciation Day",
+    "description": "A day to celebrate and thank all the volunteers in the community.",
+    "event_date": "2025-01-05",
+    "organizer": "Community Helpers"
+  },
+  {
+    "_id": "23",
+    "title": "Startup Accelerator Demo Day",
+    "description": "Startups showcase their products and services to potential investors.",
+    "event_date": "2025-02-22",
+    "organizer": "Accelerate Ventures"
+  },
+  {
+    "_id": "24",
+    "title": "Pet Adoption Fair",
+    "description": "An event to find loving homes for pets in need.",
+    "event_date": "2025-01-30",
+    "organizer": "Animal Rescue Alliance"
+  },
+  {
+    "_id": "25",
+    "title": "Literary Festival",
+    "description": "A celebration of literature with readings and workshops by authors.",
+    "event_date": "2025-03-20",
+    "organizer": "Writers Guild"
+  },
+  {
+    "_id": "26",
+    "title": "Sustainability Forum",
+    "description": "Experts discuss sustainable practices for businesses and individuals.",
+    "event_date": "2024-12-30",
+    "organizer": "Sustainable Futures"
+  },
+  {
+    "_id": "27",
+    "title": "Charity 5K Run",
+    "description": "A fun run to raise funds for local charities.",
+    "event_date": "2025-02-28",
+    "organizer": "Run For A Cause"
+  },
+  {
+    "_id": "28",
+    "title": "Data Science Hackathon",
+    "description": "Compete in teams to solve real-world data challenges.",
+    "event_date": "2025-03-05",
+    "organizer": "Data Nerds"
+  },
+  {
+    "_id": "29",
+    "title": "Public Speaking Workshop",
+    "description": "Develop your public speaking skills with expert coaches.",
+    "event_date": "2025-01-12",
+    "organizer": "SpeakEasy Academy"
+  },
+  {
+    "_id": "30",
+    "title": "Gardening Expo",
+    "description": "Learn tips and tricks for successful gardening from experts.",
+    "event_date": "2025-02-10",
+    "organizer": "Green Thumb Society"
   }
 ]

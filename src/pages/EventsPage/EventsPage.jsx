@@ -1,7 +1,12 @@
+import EventsList from '../../components/EventsList/EventsList';
 import styles from './EventsPage.module.css';
 
 const EventsPage = () => {
-  return <div>EventsPage</div>;
+  return (
+    <main>
+      <EventsList />
+    </main>
+  );
 };
 
 export default EventsPage;
