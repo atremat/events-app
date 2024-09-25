@@ -4,12 +4,12 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 // axios.defaults.baseURL = 'http://localhost:3000';
 axios.defaults.baseURL = 'https://events-app-back-dojt.onrender.com';
 
-export const fetchEvents = createAsyncThunk(
-  'events/fetchEvents',
+export const fetchParticipants = createAsyncThunk(
+  'events/fetchParticipants',
   async (_, thunkAPI) => {
     try {
-      const response = await axios.get('/events');
-      console.log('response: ', response.data.data);
+      const response = await axios.get('/participants');
+      console.log('participants: ', response.data.data);
 
       return response.data.data;
     } catch (error) {
