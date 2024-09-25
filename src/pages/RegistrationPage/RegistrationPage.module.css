@@ -10,16 +10,17 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 320px;
   gap: 24px;
 }
 
 .nameWrapper,
 .emailWrapper,
-.dateWrapper {
+.dateWrapper,
+.selectWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 320px;
 }
 
 .errorText {
@@ -28,4 +29,9 @@
   bottom: -20px;
   color: red;
   font-size: 0.8rem;
+}
+
+.radioWrapper {
+  display: flex;
+  gap: 16px;
 }

@@ -19,6 +19,7 @@ const registrationSchema = yup.object({
     .string()
     .required('Birth date is required!')
     .matches(birthDateExp, 'The date must follow the format YYYY-MM-DD.'),
+  question: yup.string().required('Please select an option!'),
 });
 
 const RegistrationPage = () => {
@@ -35,6 +36,12 @@ const RegistrationPage = () => {
     formState: { errors },
   } = useForm({
     resolver: yupResolver(registrationSchema),
+    defaultValues: {
+      fullname: '',
+      email: '',
+      birthDate: '',
+      radio: '',
+    },
   });
 
   const onSubmit = data => {
@@ -76,6 +83,42 @@ const RegistrationPage = () => {
             className={styles.input}
           />
           <p className={styles.errorText}>{errors.birthDate?.message}</p>
+        </div>
+
+        <div className={styles.selectWrapper}>
+          <fieldset>
+            <legend className={styles.label}>
+              Where did you hear about this event?
+            </legend>
+
+            <div className={styles.radioWrapper}>
+              <input
+                {...register('question')}
+                type="radio"
+                value="social"
+                id="social"
+              />
+              <label htmlFor="social">Social media</label>
+
+              <input
+                {...register('question')}
+                type="radio"
+                value="friends"
+                id="friends"
+              />
+              <label htmlFor="friends">Friends </label>
+
+              <input
+                {...register('question')}
+                type="radio"
+                value="myself"
+                id="myself"
+              />
+              <label htmlFor="myself">Found myself </label>
+            </div>
+          </fieldset>
+
+          <p className={styles.errorText}>{errors.question?.message}</p>
         </div>
 
         <button type="submit">Register</button>
