@@ -49,11 +49,12 @@ const RegistrationPage = () => {
 
   const onSubmit = data => {
     console.log('registration data: ', { ...data, eventId });
+    reset();
   };
 
   return (
     <main className={styles.main}>
-      <h2 className={styles.title}>Event registration</h2>
+      <h1 className={styles.title}>Event registration</h1>
 
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <div className={styles.nameWrapper}>
@@ -88,7 +89,7 @@ const RegistrationPage = () => {
           <p className={styles.errorText}>{errors.birthDate?.message}</p>
         </div>
 
-        <div className={styles.selectWrapper}>
+        <div className={styles.fieldsetWrapper}>
           <fieldset>
             <legend className={styles.label}>
               Where did you hear about this event?

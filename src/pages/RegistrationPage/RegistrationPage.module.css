@@ -15,12 +15,16 @@
 
 .nameWrapper,
 .emailWrapper,
-.dateWrapper,
-.selectWrapper {
+.dateWrapper {
   display: flex;
   flex-direction: column;
   position: relative;
+
   width: 320px;
+}
+
+.fieldsetWrapper {
+  position: relative;
 }
 
 .errorText {
