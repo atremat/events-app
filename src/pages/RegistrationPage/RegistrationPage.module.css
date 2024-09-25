@@ -1,0 +1,31 @@
+.main {
+  width: 500px;
+  border: 1px solid red;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 24px;
+}
+
+.nameWrapper,
+.emailWrapper,
+.dateWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.errorText {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  color: red;
+  font-size: 0.8rem;
+}

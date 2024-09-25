@@ -10,7 +10,7 @@ const EventItem = ({ event }) => {
       </div>
 
       <div className={styles.actions}>
-        <Link to="/registration">Register</Link>
+        <Link to={`/registration/${event._id}`}>Register</Link>
         <button type="button">View</button>
       </div>
     </li>
