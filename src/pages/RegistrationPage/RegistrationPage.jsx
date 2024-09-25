@@ -28,6 +28,9 @@ const RegistrationPage = () => {
   const fullnameId = useId();
   const emailId = useId();
   const dateId = useId();
+  const socialId = useId();
+  const friendsId = useId();
+  const myselfId = useId();
 
   const {
     register,
@@ -40,12 +43,12 @@ const RegistrationPage = () => {
       fullname: '',
       email: '',
       birthDate: '',
-      radio: '',
+      question: '',
     },
   });
 
   const onSubmit = data => {
-    console.log('registration data: ', data);
+    console.log('registration data: ', { ...data, eventId });
   };
 
   return (
@@ -96,25 +99,25 @@ const RegistrationPage = () => {
                 {...register('question')}
                 type="radio"
                 value="social"
-                id="social"
+                id={socialId}
               />
-              <label htmlFor="social">Social media</label>
+              <label htmlFor={socialId}>Social media</label>
 
               <input
                 {...register('question')}
                 type="radio"
                 value="friends"
-                id="friends"
+                id={friendsId}
               />
-              <label htmlFor="friends">Friends </label>
+              <label htmlFor={friendsId}>Friends </label>
 
               <input
                 {...register('question')}
                 type="radio"
                 value="myself"
-                id="myself"
+                id={myselfId}
               />
-              <label htmlFor="myself">Found myself </label>
+              <label htmlFor={myselfId}>Found myself </label>
             </div>
           </fieldset>
 
