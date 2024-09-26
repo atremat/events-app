@@ -46,9 +46,13 @@ const eventsSlice = createSlice({
       .addCase(fetchEvents.fulfilled, (state, action) => {
         state.loading = false;
         state.items = action.payload.data;
+        state.totalItems = action.payload.totalItems;
       })
       .addCase(fetchEvents.rejected, isRejected);
   },
 });
 
 export const eventsReducer = eventsSlice.reducer;
+
+export const { setPage, setPerPage, setSortBy, setSortOrder } =
+  eventsSlice.actions;

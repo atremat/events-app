@@ -3,3 +3,30 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination .active {
+  font-weight: bold;
+  border: 1px solid #007bff;
+  padding: 0.5rem;
+}
+
+.pagination a {
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0;
+}
+
+.reactPaginate {
+  display: flex;
+}
