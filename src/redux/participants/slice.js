@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchParticipants } from './operations';
+import { fetchParticipants, createParticipant } from './operations';
 
 const participantsInitialState = {
   items: [],
@@ -28,7 +28,14 @@ const participantsSlice = createSlice({
         state.loading = false;
         state.items = action.payload;
       })
-      .addCase(fetchParticipants.rejected, isRejected);
+      .addCase(fetchParticipants.rejected, isRejected)
+      //create participant
+      .addCase(createParticipant.pending, isPending)
+      .addCase(createParticipant.fulfilled, (state, action) => {
+        state.loading = false;
+        state.items = [...state.items, action.payload];
+      })
+      .addCase(createParticipant.rejected, isRejected);
   },
 });
 

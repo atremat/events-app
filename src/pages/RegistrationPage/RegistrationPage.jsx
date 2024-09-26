@@ -4,6 +4,8 @@ import * as yup from 'yup';
 import styles from './RegistrationPage.module.css';
 import { useId } from 'react';
 import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
+import { createParticipant } from '../../redux/participants/operations';
 
 const emailRegExp = /^[\w.-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
 const birthDateExp = /^\d{4}-\d{2}-\d{2}$/;
@@ -24,6 +26,7 @@ const registrationSchema = yup.object({
 
 const RegistrationPage = () => {
   const { eventId } = useParams();
+  const dispatch = useDispatch();
 
   const fullnameId = useId();
   const emailId = useId();
@@ -48,7 +51,7 @@ const RegistrationPage = () => {
   });
 
   const onSubmit = data => {
-    console.log('registration data: ', { ...data, eventId });
+    dispatch(createParticipant({ ...data, eventId }));
     reset();
   };
 
