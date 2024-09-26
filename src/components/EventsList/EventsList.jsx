@@ -4,15 +4,28 @@ import EventItem from '../EventItem/EventItem';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents } from '../../redux/events/operations';
-import { selectEvents } from '../../redux/events/selectors';
+import {
+  selectEvents,
+  selectPage,
+  selectPerPage,
+  selectSortBy,
+  selectSortOrder,
+} from '../../redux/events/selectors';
 
 const EventsList = () => {
   const events = useSelector(selectEvents);
   const dispatch = useDispatch();
 
+  const page = useSelector(selectPage);
+  const perPage = useSelector(selectPerPage);
+  const sortBy = useSelector(selectSortBy);
+  const sortOrder = useSelector(selectSortOrder);
+
   useEffect(() => {
-    dispatch(fetchEvents());
-  }, [dispatch]);
+    const params = { page, perPage, sortBy, sortOrder };
+
+    dispatch(fetchEvents(params));
+  }, [dispatch, page, perPage, sortBy, sortOrder]);
 
   return (
     <section>

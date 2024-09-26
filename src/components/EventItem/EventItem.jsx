@@ -11,7 +11,7 @@ const EventItem = ({ event }) => {
 
       <div className={styles.actions}>
         <Link to={`/registration/${event._id}`}>Register</Link>
-        <button type="button">View</button>
+        <Link to={`/participants`}>View</Link>
       </div>
     </li>
   );
