@@ -128,7 +128,9 @@ const RegistrationPage = () => {
           <p className={styles.errorText}>{errors.question?.message}</p>
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit" className={styles.submitBtn}>
+          Register
+        </button>
       </form>
     </main>
   );

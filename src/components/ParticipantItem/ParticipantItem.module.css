@@ -1,5 +1,12 @@
 .item {
-  border: 1px solid red;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #88e0e3;
   padding: 10px;
   width: calc((100% - 72px) / 4);
+  min-height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

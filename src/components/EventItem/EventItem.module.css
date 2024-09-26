@@ -1,13 +1,24 @@
 .item {
-  border: 1px solid red;
   padding: 10px;
   width: calc((100% - 48px) / 3);
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #88e0e3;
 }
 
 .actions {
   display: flex;
   justify-content: space-between;
+}
+
+.link {
+  color: #30cfd0;
+}
+
+.link:hover {
+  color: #14a6ab;
 }

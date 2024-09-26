@@ -1,4 +1,16 @@
+.header {
+  padding: 24px;
+  background-color: #1a1f36;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 12px;
+}
+
 .nav {
   display: flex;
   gap: 24px;
+}
+
+.link {
+  color: #ffffff;
 }

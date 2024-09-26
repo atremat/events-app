@@ -10,8 +10,12 @@ const EventItem = ({ event }) => {
       </div>
 
       <div className={styles.actions}>
-        <Link to={`/registration/${event._id}`}>Register</Link>
-        <Link to={`/participants`}>View</Link>
+        <Link to={`/registration/${event._id}`} className={styles.link}>
+          Register
+        </Link>
+        <Link to={`/participants`} className={styles.link}>
+          View
+        </Link>
       </div>
     </li>
   );

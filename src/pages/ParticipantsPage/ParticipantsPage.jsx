@@ -16,7 +16,7 @@ const ParticipantsPage = () => {
 
   return (
     <main>
-      <h1>&quot;Awesome Event&quot; participants</h1>
+      <h1 className={styles.title}>&quot;Awesome Event&quot; participants</h1>
 
       {participants.length > 0 ? (
         <ul className={styles.list}>

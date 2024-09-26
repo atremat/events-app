@@ -1,16 +1,16 @@
 import styles from './AppBar.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AppBar = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.nav}>
-        <NavLink to="/" className={styles.link}>
+        <Link to="/" className={styles.link}>
           Events
-        </NavLink>
-        <NavLink to="/participants" className={styles.link}>
+        </Link>
+        <Link to="/participants" className={styles.link}>
           Participants
-        </NavLink>
+        </Link>
       </nav>
     </header>
   );

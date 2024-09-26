@@ -1,6 +1,5 @@
 .main {
   width: 500px;
-  border: 1px solid red;
 }
 
 .title {
@@ -38,4 +37,12 @@
 .radioWrapper {
   display: flex;
   gap: 16px;
+}
+
+.submitBtn {
+  border: 1px solid #88e0e3;
+  width: 120px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

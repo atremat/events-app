@@ -30,3 +30,7 @@
 .reactPaginate {
   display: flex;
 }
+
+.title {
+  margin-bottom: 24px;
+}

@@ -35,7 +35,7 @@ const EventsList = () => {
 
   return (
     <section>
-      <h1>Events</h1>
+      <h1 className={styles.title}>Events</h1>
 
       {events.length > 0 ? (
         <>
